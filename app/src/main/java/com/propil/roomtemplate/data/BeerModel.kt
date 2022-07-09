@@ -5,7 +5,7 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 
 @Entity(tableName = "BeerDatabase")
-data class BeerModel(@PrimaryKey(autoGenerate = true) val id: Long = 0,
+data class BeerModel(@PrimaryKey(autoGenerate = true) var id: Long = 0,
 
                      @ColumnInfo(name = "Beer brand")
                      var beerBrand: String = "",
